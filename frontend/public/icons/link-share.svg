@@ -1,0 +1,17 @@
+<!-- link-share.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- background -->
+  <circle cx="12" cy="12" r="10" fill="#00897B" />
+  <!-- left link -->
+  <path d="M10 9.5H9a3 3 0 1 0 0 6h1"
+        fill="none" stroke="#FFFFFF" stroke-width="1.6"
+        stroke-linecap="round" stroke-linejoin="round" />
+  <!-- right link -->
+  <path d="M14 9.5h1a3 3 0 1 1 0 6h-1"
+        fill="none" stroke="#FFFFFF" stroke-width="1.6"
+        stroke-linecap="round" stroke-linejoin="round" />
+  <!-- connection -->
+  <path d="M10 12.5h4"
+        fill="none" stroke="#FFFFFF" stroke-width="1.6"
+        stroke-linecap="round" />
+</svg>

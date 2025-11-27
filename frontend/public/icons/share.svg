@@ -1,0 +1,21 @@
+<!-- share.svg (final version) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- background -->
+  <circle cx="12" cy="12" r="10" fill="#43A047" />
+
+  <!-- top-right node -->
+  <circle cx="15.5" cy="8.5" r="1.4" fill="#FFFFFF" />
+  <!-- bottom-right node -->
+  <circle cx="15.5" cy="15.5" r="1.4" fill="#FFFFFF" />
+  <!-- left-center node -->
+  <circle cx="8" cy="12" r="1.4" fill="#FFFFFF" />
+
+  <!-- line: left -> top-right -->
+  <path d="M9.1 11.4L14.4 9.1"
+        fill="none" stroke="#FFFFFF" stroke-width="1.4"
+        stroke-linecap="round" />
+  <!-- line: left -> bottom-right -->
+  <path d="M9.1 12.6L14.4 14.9"
+        fill="none" stroke="#FFFFFF" stroke-width="1.4"
+        stroke-linecap="round" />
+</svg>

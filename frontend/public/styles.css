@@ -1,0 +1,117 @@
+:root { --bg:#0d1117; --panel:#161b22; --text:#c9d1d9; --accent:#58a6ff; --muted:#8b949e; --error:#ff6b6b; --ok:#3fb950; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Arial,sans-serif}
+.container{
+  max-width:900px;
+  width:fit-content;
+  min-width:420px;
+  margin:8vh auto;
+  padding:24px;
+  background:var(--panel);
+  border:1px solid #30363d;
+  border-radius:10px;
+}
+h1,h2{margin:0 0 16px 0;font-weight:600}
+label{display:block;margin:10px 0 6px 0;color:var(--muted);font-size:0.95rem}
+input{width:100%;padding:10px 12px;border:1px solid #30363d;border-radius:8px;background:#0b0f14;color:var(--text)}
+button{width:100%;margin-top:12px;padding:10px 12px;border:0;border-radius:8px;background:var(--accent);color:#0b0f14;font-weight:700;cursor:pointer}
+button.secondary{background:#30363d;color:var(--text)}
+.row{display:flex;gap:10px}
+.msg{margin-top:10px;font-size:0.95rem}
+.msg.error{color:var(--error)}
+.msg.ok{color:var(--ok)}
+nav{margin-top:12px;text-align:center}
+nav a{color:var(--accent);text-decoration:none}
+
+/* --- MiniDrive layout tweaks --- */
+.file-row{
+  border-bottom:1px solid #30363d;
+  padding:10px 0;
+}
+.file-top{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:12px;
+}
+.file-title{
+  flex:1;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:nowrap;
+  justify-self:end;
+}
+.actions button{width:auto;margin-top:0;}
+.comments{
+  margin-top:8px;
+  border:1px dashed #444;
+  padding:8px;
+  border-radius:8px;
+}
+.comments-list{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-top:8px;
+}
+
+/* Upload field styling */
+.file-input-row{margin-top:4px;}
+.file-input-fake{
+  display:block;
+  width:100%;
+  padding:10px 12px;
+  border:1px solid #30363d;
+  border-radius:8px;
+  background:#0b0f14;
+  color:var(--muted);
+  cursor:pointer;
+}
+.file-input-fake input[type="file"]{display:none;}
+.file-input-fake.has-file{color:var(--text);}
+
+/* Button color variants */
+button.btn-green{background:var(--ok);color:#0b0f14;}
+button.btn-red{background:#e55353;color:#0b0f14;}
+
+/* Owned-actions wrapper */
+.actions-owned{display:flex;gap:8px;}
+
+/* File meta row (size / date / shared tag) */
+.file-meta{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  font-size:0.8rem;
+  color:var(--muted);
+  margin-top:4px;
+}
+.file-meta span::after{content:"•";margin:0 4px;}
+.file-meta span:last-child::after{content:"";}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* if you want spacing between multiple icons */
+.actions .icon-btn,
+.actions-owned .icon-btn {
+  margin-left: 4px;
+}

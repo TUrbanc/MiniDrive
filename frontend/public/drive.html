@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <title>MiniDrive – Drive</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Drive</h2>
+
+    <form id="uploadForm">
+      <label for="fileInput">Izberite datoteko</label>
+      <div class="file-input-row">
+        <label class="file-input-fake">
+          <span id="fileInputLabel">Izberite datoteko…</span>
+          <input id="fileInput" type="file" required>
+        </label>
+      </div>
+    </form>
+    <p id="uploadMsg" class="msg"></p>
+
+    <h2>Moje datoteke</h2>
+    <div id="fileList" class="list"></div>
+
+    <h2 style="margin-top:20px">Z mano v skupni rabi</h2>
+    <div id="sharedList" class="list"></div>
+
+    <nav style="margin-top:16px">
+      <a href="/">Odjava</a>
+    </nav>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/drive.js"></script>
+  <script>initDrive();</script>
+</body>
+</html>
