@@ -71,7 +71,7 @@ async function authDelete(path, data) {
 }
 
 
-// ---- Sharing & comments helpers ----
+// Sharing & comments helpers
 async function shareToUser(fileId, targetUsername, canDownload = true) {
   return await authPost('/shares/user', { fileId, targetUsername, canDownload });
 }

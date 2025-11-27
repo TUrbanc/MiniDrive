@@ -5,7 +5,7 @@ function requireTokenOrRedirect() {
 
 function humanKB(n) { return (n / 1024).toFixed(1) + ' KB'; }
 
-/** helper: create button with SVG icon from /public/icons */
+// helper: create button with SVG icon from /public/icons
 function createIconButton(iconName, label, extraClasses = []) {
   const btn = document.createElement('button');
   btn.type = 'button';
